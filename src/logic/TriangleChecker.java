@@ -6,11 +6,8 @@ public class TriangleChecker {
 
     public boolean isRightTriangle(Triangle triangle){
         boolean score = false;
-        if(triangle.getDimensionA() == triangle.getDimensionB()) {
-            score = true;
-        } else if(triangle.getDimensionA() == triangle.getDimensionC()) {
-            score = true;
-        } else if(triangle.getDimensionB() == triangle.getDimensionC()) {
+        if(triangle.getDimensionA() * triangle.getDimensionA() + (triangle.getDimensionB() * triangle.getDimensionB())
+                == triangle.getDimensionC() * triangle.getDimensionC()) {
             score = true;
         } else {
             score = false;
